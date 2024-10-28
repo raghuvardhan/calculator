@@ -1,7 +1,11 @@
 let currentInput = '';
 
+function back() { 
+    currentInput = currentInput.slice(0, currentInput.length - 1);
+    updateDisplay();
+}
+
 function appendNumber(number) {
-    console.log("append");
     currentInput += number;
     updateDisplay();
 }
